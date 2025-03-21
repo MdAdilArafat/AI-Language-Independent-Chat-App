@@ -35,9 +35,9 @@ io.on('connection', (socket) => {
     // registering the user's id and language etc
     socket.on('register',((register)=>{
         log.push(register)
-        console.log('register ho gaya',log);
+        console.log('registered successfully',log);
         
-    }))   
+    }))     
     
     // Receiving data  
     socket.on('message', (msg) => {
