@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 const http = require('http').createServer(app)
-require('dotenv').config()
 const log = require('./logFile')
 const getTranslate = require('./aiAgent')
 const io = require('socket.io')(http)
