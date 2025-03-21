@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adil chat app</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+ 
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/wassup.png" alt="">
+            <h1 class="opacity">CHAT with Strangers</h1>
+        </div>
+        <div class="message__area">
+            <form class="form" action="/" method="post">
+                <input type="text" id="name" placeholder="Enter your name...">
+                <input type="text" id="language" placeholder="Enter your language...">
+                <button type="submit">Star kardu</button>
+            </form>
+        </div>
+        <div>
+            <textarea id="textarea" class="opacity" cols="30" rows="1" placeholder="Write a message..."></textarea>
+        </div>
+    </section>
+   
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
